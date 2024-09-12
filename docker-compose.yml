@@ -1,0 +1,11 @@
+name: pocket-server
+
+services:
+  postgres:
+    image: bitnami/postgresql:13.16.0
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: pocket
+      POSTGRES_PASSWORD: pocket
+      POSTGRES_DB: inorbit
